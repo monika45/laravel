@@ -1,0 +1,8 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: php:latest
+      shellScript: php -v
+timeout: 60
+notification: {}
