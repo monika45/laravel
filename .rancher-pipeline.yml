@@ -5,7 +5,9 @@ stages:
       image: php:latest
       shellScript: |-
         php -v
-        uname -a
+        lsb_release -d
+        sudo apt-get install -f composer
+        #uname -a
         #composer -v
 timeout: 60
 notification: {}
